@@ -201,13 +201,13 @@ body {
 	background-position: 19px 0;
 }
 
-.slider {
+.slider-box {
 	margin-top: 40px;
 	height: 493px;
 	width: 980px;	
 }
 
-.slide-container {
+.slide-bg {
 	height: 493px;
 	width: 980px;
 	position: relative;
@@ -232,8 +232,8 @@ body {
 	height: 188px;
 	width: 1355px;
 	background-image: url(../img/slider-shadow.png);
-	position: relative;
-	bottom: 100px;
+	position: absolute;
+	bottom: -100px;
 	left: -160px;
 	margin-left: auto;
 	margin-right: auto;
@@ -985,3 +985,35 @@ body {
 }
 
 /*  Блок 8 - подвал end */
+
+
+/* swiper */
+
+.swiper-container {
+	height: 493px;
+	width: 980px;
+	z-index: 5;
+}
+
+.swiper-pagination {
+	padding-left: 25px;
+	text-align: left;
+}
+
+.swiper-pagination-bullet {
+	width: 32px;
+	height: 12px;
+	background: #fff;
+	opacity: 1;
+	border-radius: 0;
+	outline: none;
+}
+
+.swiper-pagination-bullet-active {
+	background: #01983b;
+	outline: none;
+}
+
+.swiper-button-next, .swiper-button-prev {
+	outline: none;
+}
